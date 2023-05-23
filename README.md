@@ -32,7 +32,9 @@
 
 1. [Configurando editor de texto](Ambiente/Editor.md)
 1. [Instalando a linguagem e framework](Ambiente/Linguagem.md)
+### Entendendo a arquitetura e padrões importantes
 
+1. [Entendendo MVC](Arquitetura/MVC.md)
 ## Como Contribuir
 
 Contribuições fazem com que a comunidade open source seja um lugar incrível
