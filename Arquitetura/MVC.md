@@ -11,4 +11,4 @@ no nosso site na rota `/todos`, no momento que ele aperta enter e o navegador
 dispara uma chamada GET para a nossa API o controlador `todos_controller` processa esses
 dados da chamada, busca a lista de to-dos do banco de dados utilizando o modelo `todo_model` e então retorna um template HTML que chamamos de view. Com isso o browser processa o HTML e devolve a sua pagina com a lista de itens conforme mostrado abaixo.
 
-![exemplo_de_view_lista_de_todos](./imgs/2023-05-23-19-29-47.png)
+![exemplo de view lista de to_dos](./imgs/2023-05-23-19-51-17.png)
