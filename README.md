@@ -31,7 +31,8 @@
 ### Configuração de Ambiente
 
 1. [Configurando editor de texto](Ambiente/Editor.md)
-1. [Instalando a linguagem e framework](Ambiente/Linguagem.md)
+2. [Instalando a linguagem e framework](Ambiente/Linguagem.md)
+
 ### Entendendo a arquitetura e padrões importantes
 
 1. [Entendendo MVC](Arquitetura/MVC.md)
