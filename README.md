@@ -36,6 +36,8 @@
 ### Entendendo a arquitetura e padrões importantes
 
 1. [Entendendo MVC](Arquitetura/MVC.md)
+2. [Entendendo Convention over Configuration](Arquitetura/Convention_over_Configuration.md)
+
 ## Como Contribuir
 
 Contribuições fazem com que a comunidade open source seja um lugar incrível
