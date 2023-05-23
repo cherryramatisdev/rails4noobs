@@ -17,4 +17,4 @@ Ruby, utiliza padrões importantes como "Model-View-Controller"
 (DRY), entre outros importantes padrões que já circulam a
 comunidade ruby para garantir código de qualidade.
 
-Próximo: [Setup de editor](Ambiente/Editor.md)
+Próximo: [Setup de editor](/Ambiente/Editor.md)
