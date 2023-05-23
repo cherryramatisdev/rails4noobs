@@ -73,4 +73,4 @@ Para o melhor uso desse editor, recomendo os seguintes plugins:
 
 > A He4rt tem um 4noobs sobre vim caso tenha interesse: [vim4noobs](https://github.com/luanmateuz/vim4noobs)
 
-Próximo: [Instalando a linguagem ruby](Ambiente/Linguagem.md)
+Próximo: [Instalando a linguagem ruby](/Ambiente/Linguagem.md)
