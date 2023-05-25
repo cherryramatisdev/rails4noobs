@@ -1,3 +1,5 @@
+## ESSE REPOSITÓRIO AINDA ESTÁ EM CONSTRUÇÃO
+
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
     <img src="https://raw.githubusercontent.com/he4rt/4noobs/7f3075b72a6d79d17fc0fed374fb48114bcd0e1b/.github/header_4noobs.svg">
@@ -37,6 +39,10 @@
 
 1. [Entendendo MVC](Arquitetura/MVC.md)
 2. [Entendendo Convention over Configuration](Arquitetura/Convention_over_Configuration.md)
+
+### Na pratica
+
+1. [Iniciando um projeto](Na_Pratica/Iniciando_um_projeto.md)
 
 ## Como Contribuir
 
