@@ -155,3 +155,5 @@ A estrutura de um projeto Rails apresentada acima segue a convenção padrão do
 - `storage`: Nesse diretório ficam os arquivos gerados por modulos de upload de arquivo (aqueles formularios de "arraste o arquivo para ca") para facilitar os testes locais.
 - `test`: É o diretório que contém os testes da aplicação, dentro desse diretório teremos testes de feature, testes unitários e por ai vai.
 - `vendor/`: Nesse diretório fica um cache de bibliotecas externas (normalmente javascript como jquery).
+
+Próximo: [Criando o primeiro modelo](Na_Pratica/Criando_o_primeiro_modelo.md)
