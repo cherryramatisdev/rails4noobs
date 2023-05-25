@@ -42,7 +42,8 @@
 
 ### Na pratica
 
-1. [Iniciando um projeto](Na_Pratica/Iniciando_um_projeto.md)
+1. [O que vamos construir?](Na_Pratica/O_que_vamos_construir.md)
+2. [Iniciando um projeto](Na_Pratica/Iniciando_um_projeto.md)
 
 ## Como Contribuir
 
