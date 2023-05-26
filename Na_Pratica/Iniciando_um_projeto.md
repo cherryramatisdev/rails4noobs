@@ -127,21 +127,19 @@ Executando esse comando você terá estrutura parecida com a mostrada abaixo:
 46 directories, 68 files
 ```
 
-Como pode ver o projeto padrão te entrega **muita** coisa e isso esta completamente de acordo com a filosofia [Convention Over Configuration](../Arquitetura/Convention_over_Configuration). Vamos entender agora no detalhe o que cada nivel de pasta significa para o framework.
-
 ## Entendendo a estrutura de arquivos
 
-A estrutura de um projeto Rails apresentada acima segue a convenção padrão do framework Ruby on Rails. Vamos descrever cada diretório e arquivo e seu propósito dentro do projeto:
+Como pode ver o projeto padrão te entrega **muita** coisa e isso esta completamente de acordo com a filosofia [Convention Over Configuration](../Arquitetura/Convention_over_Configuration). Vamos entender agora no detalhe o que cada nivel de pasta significa para o framework.
 
-- `Gemfile`: É um arquivo que define as dependências do projeto e as versões das mesmas.
+- `Gemfile`: Neste arquivo temos o registro de todas as bibliotecas externas que serão usadas no projeto.
 - `Rakefile`: Rake é uma ferramenta de automação do ruby que permite definir scripts uteis para criação de arquivos (controllers, testes, etc...) por exemplo e o Rakefile justamente define cada uma dessas tarefas (vamos ver mais delas em detalhe no capitulo [Comandos do rails](Na_Pratica/Comandos_do_rails.md).
 - `app`: É o diretório principal onde a lógica da aplicação reside.
   - `assets`: É o diretório que contém os recursos estáticos da aplicação, como folhas de estilo (CSS), imagens e JavaScript.
   - `channels`: Nesse diretório definimos as classes responsaveis por [respostas em tempo real](https://guides.rubyonrails.org/action_cable_overview.html)
   - `controllers`: Nesse diretório definimos as classes que lidam com requisições HTTP ([relembre o modelo MVC](Arquitetura/MVC.md))
   - `helpers`: Nesse diretório vão ser definidas as classes utilitarias que podem ser usadas em multiplos lugares da aplicação (inclusive em views!)
-  - `javascript`: Nesse diretório são armazenados todo o javascript necessário tanto para a execução minima do rails quanto para futuras bibliotecas utilitárias que queiramos usar (sim, tem como colocar frameworks complexos como [React](https://medium.com/rd-shipit/how-to-set-up-a-rails-7-project-with-react-and-jest-f2e016bfbdf3) em um projeto rails)
-  - `jobs`: Nesse diretório vão ser definidas as classes para declarar jobs (tarefas que executam em um momento X e que normalmente são controladas por uma [fila de execução](https://www.geeksforgeeks.org/queue-data-structure/))
+  - `javascript`: Nesse diretório são armazenados todo o javascript necessário tanto para a execução minima do rails quanto para futuras bibliotecas utilitárias que queiramos usar (sim, tem como colocar frameworks complexos como [React](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-ruby-on-rails-v7-project-with-a-react-frontend-on-ubuntu-20-04) em um projeto rails)
+  - `jobs`: Nesse diretório vão ser definidas as classes para declarar jobs (tarefas que executam em um momento X e que normalmente são controladas por uma [fila de execução](https://www.cos.ufrj.br/~rfarias/cos121/filas.html))
   - `mailers`: Nesse diretório vão ser definidas as classes responsáveis por enviar emails transacionais, podemos tanto definir emails simples de texto como emails com layouts complexos utilizando HTML.
   - `models`: Nesse diretório vão ser definidas as entidades principais da aplicação (que também podem ser utilizadas para interagir com o banco de dados)
   - `views`: Nesse diretório vão ser definidos os arquivos HTML que servirão como a camada final que o usuário vai ver no navegador ao acessar nosso serviço.
@@ -149,10 +147,10 @@ A estrutura de um projeto Rails apresentada acima segue a convenção padrão do
 - `config`: Contém toda configuração relacionada a variavel de ambiente, definição de rotas(rails considera isso como configuração), credenciais de banco de dados e outros metodos de armazenamento, etc...
 - `config.ru`: Arquivo de configuração do Rack, usado pelo servidor web para iniciar a aplicação.
 - `db`: Nesse diretório vão ficar todos os arquivos relacionados a banco de dados como arquivos de migração(mais detalhes em [Migrações](Na_Pratica/Migrações.md))
-- `lib`: É o diretório que contém bibliotecas ou módulos adicionais.
+- `lib`: Nesse diretório vão ficar as classes relacionadas a lógicas específicas do seu negócio que não tem a ver com o rails em si, se você fosse trocar do rails para outro framework a pasta `lib` deveria continuar sem grandes mudanças.
 - `log`: É o diretório que contém os logs de execução da aplicação, muito util para entender eventuais problemas durante a execução do nosso projeto.
-- `public`: É o diretório público da aplicação, acessível diretamente pelo navegador. <https://www.techopedia.com/definition/15605/public-folder>
-- `storage`: Nesse diretório ficam os arquivos gerados por modulos de upload de arquivo (aqueles formularios de "arraste o arquivo para ca") para facilitar os testes locais.
+- `public`: Neste repositorio ficam todos os arquivos publicos da sua aplicação (coisas como imagens, fontes, etc..) que podem ser acessados diretamente pelo navegador.
+- `storage`: Nesse diretório ficam os arquivos proeminentes do Active Storage (serviço do rails que cuida de upload de arquivos para providers como amazon s3).
 - `test`: É o diretório que contém os testes da aplicação, dentro desse diretório teremos testes de feature, testes unitários e por ai vai.
 - `vendor/`: Nesse diretório fica um cache de bibliotecas externas (normalmente javascript como jquery).
 
