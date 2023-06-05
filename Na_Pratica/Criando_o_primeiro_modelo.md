@@ -12,6 +12,12 @@ Dito isso vamos a prática! Entre na pasta do seu projeto e execute o seguinte c
 rails generate model todo title:string description:text done:boolean
 ```
 
+Logo após para que de fato apliquemos nossas mudanças no banco de dados execute:
+
+```sh
+rails db:migrate
+```
+
 ### Entendendo o comando passo a passo
 
 O subcomando `generate` no rails te permite gerar [código boilerplate](https://pt.stackoverflow.com/questions/10575/o-que-%C3%A9-boilerplate-code) de coisas comuns do dia a dia (como controllers, models, migrations, views, mailers, etc...) com mais facilidade. Um adendo, bibliotecas de terceiros também podem instalar novos generators no seu projeto para facilitar mais ainda a configuração.
@@ -52,4 +58,4 @@ e testar esse novo model.
 
 A partir de agora não vamos usar tantos generators visto que vamos criar arquivos de regra de negócio como controllers, views, etc...
 
-Agora vamos criar nosso primeiro controller e devolver um texto simples já fazendo query no banco! também vamos conhecer um pouco mais sobre o console interativo do rails. [Criando o primeiro controller](Na_Pratica/Criando_o_primeiro_controller.md)
+Agora vamos criar nosso primeiro controller e devolver um texto simples já fazendo query no banco! também vamos conhecer um pouco mais sobre o console interativo do rails. [Criando o primeiro controller](/Na_Pratica/Criando_o_primeiro_controller.md)
