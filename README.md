@@ -46,6 +46,7 @@
 2. [Iniciando um projeto](Na_Pratica/Iniciando_um_projeto.md)
     1. [Criando o primeiro modelo](Na_Pratica/Criando_o_primeiro_modelo.md)
     2. [Criando o primeiro controller](Na_Pratica/Criando_o_primeiro_controller.md)
+    3. [Criando a primeira view](/Na_Pratica/Criando_a_primeira_view.md)
 
 ## Como Contribuir
 
