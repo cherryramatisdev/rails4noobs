@@ -47,6 +47,14 @@
     1. [Criando o primeiro modelo](Na_Pratica/Criando_o_primeiro_modelo.md)
     2. [Criando o primeiro controller](Na_Pratica/Criando_o_primeiro_controller.md)
     3. [Criando a primeira view](/Na_Pratica/Criando_a_primeira_view.md)
+    4. [Melhorando pagina de listagem de tarefas](/Na_Pratica/Melhorando_pagina_de_listagem_de_tarefas.md)
+
+### Explicação
+
+1. [ERB](/Explicacao/ERB/index.md)
+    1. [Diferença entre tag de exibição e tag de controle](/Explicacao/ERB/Diferenca_entre_tag_de_exibicao_e_tag_de_controle.md)
+    2. [Condicionais](/Explicacao/ERB/Condicionais.md)
+    3. [Estruturas de repetição](/Explicacao/ERB/Estruturas_de_repeticao.md)
 
 ## Como Contribuir
 
