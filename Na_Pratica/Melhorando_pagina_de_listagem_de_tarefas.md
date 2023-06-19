@@ -85,4 +85,4 @@ Visualizando a pagina no navegador temos outro erro como mostrado abaixo:
 
 ![Pagina de erro sobre variavel não definida](./imgs/2023-06-11-18-40-08.png)
 
-No próximo capitulo vamos nos aprofundar mais nos controllers e aprender como consultar o banco de dados para que possamos ajustar esse erro 🚀: [Melhorando controller de listagem de tarefas](Na_Pratica/Melhorando_controller_de_listagem_de_tarefas.md)
+No próximo capitulo vamos nos aprofundar mais nos controllers e aprender como consultar o banco de dados para que possamos ajustar esse erro 🚀 e implementar um CRUD inicial: [Melhorando controller](Na_Pratica/Melhorando_controller.md)

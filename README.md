@@ -48,6 +48,7 @@
     2. [Criando o primeiro controller](Na_Pratica/Criando_o_primeiro_controller.md)
     3. [Criando a primeira view](/Na_Pratica/Criando_a_primeira_view.md)
     4. [Melhorando pagina de listagem de tarefas](/Na_Pratica/Melhorando_pagina_de_listagem_de_tarefas.md)
+    5. [Melhorando o controller](/Na_Pratica/Melhorando_controller.md)
 
 ### Explicação
 
