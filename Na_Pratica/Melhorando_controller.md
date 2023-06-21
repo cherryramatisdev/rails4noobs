@@ -42,7 +42,46 @@ class TodoController < ApplicationController
 end
 ```
 
-Agora podemos ver alguns novos conceitos novamente:
+Aqui podemos ver alguns novos conceitos novamente:
 
 - O metodo `find` existe por padrão em classes ActiveRecord e recebe um ID(numérico ou string no caso de UUIDs) retornando uma instância de entidade.
 - O objeto `params` é automaticamente injetado em controllers e é um hash contendo tudo o que o usuário envia para essa rota (seja pelo body, por query param, por path param, etc).
+
+### Rota para criar uma nova tarefa
+
+Agora vamos definir uma rota para cadastrar uma nova tarefa onde o estado `done` sera false por padrão, dessa forma o usuário pode sempre criar uma tarefa para fazer e depois clicar para marcar como feito.
+
+Para isso vamos definir um metodo `create` que vai manipular o objeto `params` ja visto antes para retornar uma nova instancia da nossa entidade de tarefa.
+
+```ruby
+class TodoController < ApplicationController
+ def create
+   todo = Todo.new({
+     title: todo_params[:title],
+     description: todo_params[:description],
+     done: false
+   })
+
+   if todo.save
+     redirect_to todo_path(todo)
+   else
+     render :new
+   end
+ end
+
+ private
+
+ def todo_params
+   params.require(:title).require(:description).permit(:title, :description)
+ end
+end
+```
+
+Agora temos muito mais código! vamos checar com calma tudo o que foi apresentado:
+
+1. Temos um novo metodo `todo_params` que manipula o objeto `param` visto anteriormente
+
+   1. Nas multiplas chamadas do metodo `require` estamos dizendo para o rails que esses campos **precisam** estar presentes nos dados enviados a essa rota, caso não for enviado vamos disparar um erro de paramêtro.
+   2. Na ultima chamada do metodo `permit` estamos dizendo para o rails limpar o objeto que foi enviado e retornar apenas as keys que estamos passando, dessa forma montamos um objeto muito mais coeso e evitamos lidar com informações desnecessárias nas nossas rotas.
+
+2. falar sobre path aqui
