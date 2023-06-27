@@ -11,5 +11,8 @@ Rotas que teremos:
 - GET /todos
 - GET /todos/:id
 - POST /todos
+- PUT /todos/:id/toggle
 - PUT /todos/:id
 - DELETE /todos/:id
+
+Nessa proposta acima, a unica rota que divergimos do CRUD padrão é a `/todos/:id/toggle` que vai permitir o usuário alterar uma tarefa entre feito e não feito, estamos escolhendo essa decisão para tornar nossa API mais declarativa e separada quanto a regras de negócio.
